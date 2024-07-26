@@ -40,9 +40,4 @@ public class MemberDAO extends JDBConnect{  // JDBConnect를 상속받아 1,2,5�
 	}
 	
 	
-	
-	
-	
-	
-	
 }

@@ -7,7 +7,7 @@
 <title>CookieResult.jsp : main에서 만든 쿠키값 확인용 </title>
 </head>
 <body>
-	<h2> 쿠키값 확인해보기 </h2>
+	<h2> 쿠키값 확인해보기 (쿠키가 생성된 이후의 페이지) </h2>
 	
 	<%
 	Cookie[] cookies = request.getCookies();
