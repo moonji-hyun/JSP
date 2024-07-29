@@ -41,7 +41,7 @@
 		$('#closeBtn').click(function(){ // id가 closeBtn 객체를 클릭하면?
 			$('#popup').hide(); // id가 popup인 객체를 숨긴다.
 				var chkval = $("input:checkbox[id=inactiveToday]:checked").val();   //  var는 js에서 변수 선언할때 사용
-				// input태그에 checkbox 타입에 id가 inactiveTday가 체크인지 값을 chkval에 넣음
+				// input태그에 checkbox 타입에 id가 inactiveToday가 체크인지 값을 chkval에 넣음
 			
 			$.ajax({ 	// 비동기 코드로 현재창을 유지하면서 데이터를 전송함
 				url : './PopupCookie.jsp',

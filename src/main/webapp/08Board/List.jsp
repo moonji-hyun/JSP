@@ -74,7 +74,12 @@
 		%>
 			<tr>
 				<td align="center"><%= virtualNum %></td>
-				<td><%= dto.getTitle() %></td>
+				<td align ="left">
+					<a href="View.jsp?num=<%=dto.getNum()%>">   <!-- ?num=2 request.getparameter("num") -->
+						<%= dto.getTitle() %>
+					</a>
+				</td>
+				
 				<td><%= dto.getId() %></td>
 				<td><%= dto.getVisitcount() %></td>
 				<td><%= dto.getPostdate() %></td>

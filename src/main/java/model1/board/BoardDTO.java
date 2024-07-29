@@ -12,7 +12,7 @@ public class BoardDTO {
 	private String id;
 	private Date postdate;
 	private String visitcount;
-	private String naem;  // member 테이블에 있는 작성자의 이름, DB에 없는것도 사용 가능
+	private String name;  // member 테이블에 있는 작성자의 이름, DB에 없는것도 사용 가능
 	
 	// 생성자
 	public BoardDTO() { // 기본 생성자
@@ -20,6 +20,17 @@ public class BoardDTO {
 	}
 
 	
+	
+	
+	@Override  
+	public String toString() {
+		return "BoardDTO [num=" + num + ", title=" + title + ", content=" + content + ", id=" + id + ", postdate="
+				+ postdate + ", visitcount=" + visitcount + ", name=" + name + "]";
+	}
+
+
+
+
 	// 게터/세터 메서드
 	public String getNum() {
 		return num;
@@ -69,12 +80,12 @@ public class BoardDTO {
 		this.visitcount = visitcount;
 	}
 
-	public String getNaem() {
-		return naem;
+	public String getName() {
+		return name;
 	}
 
-	public void setNaem(String naem) {
-		this.naem = naem;
+	public void setName(String naem) {
+		this.name = naem;
 	}
 	
 	
