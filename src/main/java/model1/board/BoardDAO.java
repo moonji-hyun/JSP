@@ -85,9 +85,9 @@ public class BoardDAO extends JDBConnect{
 					BoardDTO boardDTO = new BoardDTO();  // 빈객체 생성
 					
 					boardDTO.setNum(resultSet.getString("num"));
-					boardDTO.setId(resultSet.getString("id"));
 					boardDTO.setTitle(resultSet.getString("title"));
 					boardDTO.setContent(resultSet.getString("content"));
+					boardDTO.setId(resultSet.getString("id"));
 					boardDTO.setPostdate(resultSet.getDate("postdate"));
 					boardDTO.setVisitcount(resultSet.getString("visitcount"));  // 객체에 값 삽입완료
 					// name 필드 null
