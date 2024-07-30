@@ -32,7 +32,7 @@ create sequence seq_board_num
 	
 drop sequence seq_board_num ;  -- 시퀀스 객체 삭제
 
---dommy data
+--dummy data
 insert into member(id, pass, name)
 	values ('kkw', '1234', '김기원');
 insert into member(id, pass, name)
@@ -70,4 +70,10 @@ select count(*) from board where title like '%제목%';
 select B.*, M.name from member M inner join board B on M.id = B.id where num=2;
 
 update board set visitcount = visitcount+1 where num=2;
+
+select * from (
+				select tb.*, rownum rNum from (
+										select * from board order by num desc
+												) Tb
+				) where rNum between 1 and 10;
 
