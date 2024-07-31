@@ -137,7 +137,7 @@ public class BoardDAO extends JDBConnect{
 			BoardDTO viewDTO = new BoardDTO();
 			
 			// 3단계 : 쿼리문 생성,  member pk - > board fk
-//			String query = "select * from board where num=?";   // 작성자?를 판단할 수 없다.
+		//	String query = "select * from board where num=?";   // 작성자?를 판단할 수 없다.
 			
 			// member에 있는 작성자를 가져올 수 있도록 join 처리용
 			String query = "select B.*, M.name from member M inner join board B on M.id = B.id where num=?";
